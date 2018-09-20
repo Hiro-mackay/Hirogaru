@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: "メイリオ", Meiryo;
+    color: #434343;
+    background-color: #f6f6f6;
+}
+
+
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+.container{
+    margin: 0 auto;
+    width: 960px;
+}
+
+a{
+    text-decoration: none;
+    color: #434343;
+}
+
+a:hover{
+    color:#f6ac4d;
+}
+
+li{
+    list-style: none;
+}
+
+
+header{
+    width: 100%;
+    height: 77px;
+    border-bottom: 3px solid #f6ac4d;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    padding-top: 25px;
+}
+
+.header-inner{
+    height: 52px;
+}
+
+
+
+header h1 img{
+    width: 52px;
+    height: 52px;
+    margin-right: 20px;
+    float: left;
+}
+
+header h1 p{
+    float: left;
+    font-size: 35px;
+}
+
+
+nav{
+    float: right;
+    margin-top: 30px;
+}
+
+nav ul li{
+    float: left;
+    padding:0 20px;
+    font-size: 16px;
+    border-left: 1px dotted #434343;
+}
+
+nav ul li:last-child {
+    border-right: 1px dotted #434343;
+}
+
+.top-contents{
+    margin-top: 30px;
+}
+
+
+.top-pickup{
+    width: 580px;
+    height: 360px;
+    background-color: white;
+    float: left;
+    margin-right: 30px;
+    border: 1px solid #dcdddf;
+    position: relative;
+}
+
+.pickup-thumb{
+    width: 580px;
+    height: 256px;
+}
+
+.top-pickup dl{
+    padding:15px 20px;
+}
+
+
+.top-pickup dl dt a{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.top-pickup dl dd{
+    font-size: 12px;
+    font-weight: bold;
+    color:#dcdddf;
+}
+
+.pickup-tag{
+    font-size: 15px;
+    padding:0 10px;
+    background-color:rgba(246, 172, 77, 0.9);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+
+.top-ranking{
+    width: 348px;
+    height: 362px;
+    float: left;
+}
+
+
+.top-ranking h2{
+    font-size: 18px;
+    font-weight: bold;
+    background: url(images/popular_icon.png) no-repeat;
+    padding-left:37px; 
+    border-bottom: 1px solid #dcdddf;
+    height: 30px;
+}
+
+
+.top-ranking ul li{
+    width: 348px;
+    height: 55px;
+    border-bottom: 1px solid #dcdddf;
+    padding:15px 0;
+}
+
+.top-ranking ul li:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.top-ranking ul li dl dt{
+    width: 89px;
+    height: 55px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+
+.ranking-num{
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #434343;
+    border: 1px solid white;
+    color: white;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    text-align: center;
+    line-height: 19px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.top-ranking ul li dl dd{
+    width: auto;
+    height: 55px;
+    float: left;
+}
+
+
+
+.top-ranking ul li dl dd h3 a{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.ranking-tag{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding:3px;
+}
+
+.WD-color{
+    background-color: orange;
+}
+
+.WP-color{
+    background-color: #e18c7c;
+}
+
+.WM-color{
+    background-color: #acd598;
+}
+
+
+.top-left{
+    width: 280px;
+    height: auto;
+    float: left;
+    margin-top: 30px;
+
+}
+
+
+.top-category{
+    width: 240px;
+    height: auto;
+    background-color: white;
+    padding:10px;
+    border:10px solid #dcdddf;
+}
+
+.top-category h3{
+    font-size: 18px;
+    font-weight: bold;
+    background: url(images/category_icon.png) no-repeat left 8px;
+    padding-left:25px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #dcdddf;
+}
+
+.top-category li{
+    font-size: 13px;
+    margin-bottom: 19px;
+    line-height: 1;
+}
+
+.top-category li:last-child{
+    margin-bottom: 0;
+}
+
+.top-ad{
+    margin-top: 30px;
+}
+
+.top-right{
+    width: 650px;
+    height: auto;
+    float: right;
+    margin-top: 30px;
+}
+
+.top-right h3{
+    font-size: 22px;
+    font-weight: bold;
+    background: url(images/new_icon.png) no-repeat left 7px;
+    padding-left: 30px;
+}
+
+.top-right ul li{
+    width: 650px;
+    height: 152px;
+    background-color: white;
+    border: 1px solid #dcdddf;
+    margin-bottom: 30px;
+}
+
+
+.top-right dl dt{
+    width: 247px;
+    height: 152px;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.new-category-tag{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 10px;
+    width: auto;
+    height: 34px;
+    color: white;
+    background-color: rgba(246, 172, 77, 0.9);
+    position: absolute;
+    top:0;
+    right: 0;
+    line-height: 34px;
+}
+
+.top-right dl dd{
+    padding: 20px 20px 0 0;
+}
+
+
+.top-right h4 a{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.new-date{
+    color:#dcdddf;
+    font-size: 12px;
+    background:url(images/new_date.png) no-repeat left ;
+    padding-left: 18px;
+}
+
+.new-tag{
+    color:#dcdddf;
+    font-size: 12px;
+    background:url(images/tag.png) no-repeat left 1px;
+    padding-left: 18px;
+    margin-left: 15px;
+}
+
+.top-right p{
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 10px;
+}
+
+
+.top-right p a{
+    color: orange;
+    text-decoration: underline;
+}
+
+
+.pagination{
+    width: auto;
+    height: 34px;
+    float: right;
+}
+
+.pagination ul li{
+    width: auto;
+    height: 32px;
+    background-color: white;
+    border: 1px solid #dcdddf;
+    float: left;
+    margin-left: 10px;
+}
+
+.pagination ul li a{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 0 8px;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 140px;
+    background-color: white;
+    margin-top: 60px;
+    border-top: 1px solid #dcdddf;
+    padding: 20px 0;
+}
+
+footer dl{
+    float: left;
+}
+
+
+footer dt{
+    width: 218px;
+    height: 52px;
+    margin-bottom: 10px;
+}
+
+
+footer dd{
+    font-size: 13px;
+    line-height: 21px;
+}
+
+
+footer dt img{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    float: left;
+}
+
+footer dt  p{
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+
+.contact{
+    width: 374px;
+    height: auto;
+    float: right;
+}
+
+.contact h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact span{
+    font-size: 12px;
+    font-weight: normal;
+    color:grey;
+    margin-left: 20px;
+}
+
+.contact textarea{
+    width: 372px;
+    height: 35px;
+    margin: 10px 0;
+    border: 1px solid #dcdddf;
+}
+
+.contact button{
+    width: 127px;
+    height: 30px;
+    background-color: #7e7e7e;
+    border: none;
+    color: white;
+    font-weight: bold;
+    float: right;
+}
+
+.contact button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
