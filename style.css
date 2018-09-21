@@ -488,6 +488,10 @@ footer ul li a:hover{
     line-height: 35px;
 }
 
+.mail-icon p{
+    font-size: 15px;
+}
+
 
 .fa-envelope-square:hover +.iconbox{
     display: flex;
@@ -632,7 +636,7 @@ nav ul li{
 }
 
 .fa-envelope-square:active{
-    color: #0000cd; 
+    color: #0000cd;
 }
 
 .fa-twitter-square:active +.iconbox{
@@ -890,5 +894,7 @@ nav ul li a{
     font-size: 12px;
 }
 
-
+.iconbox{
+    margin-left: 30px;
+}
 }
