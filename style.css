@@ -469,7 +469,7 @@ footer ul li a:hover{
 ==================================*/
 
 .contact{
-    height: 440px;
+    height: 590px;
 }
 
 .contact-icon{
@@ -479,6 +479,7 @@ footer ul li a:hover{
 
 .contact-icon a{
     display: inline-flex;
+    border-bottom: none;
 }
 
 
@@ -487,6 +488,14 @@ footer ul li a:hover{
     line-height: 35px;
 }
 
+
+.fa-envelope-square:hover +.iconbox{
+    display: flex;
+}
+
+.fa-envelope-square:hover{
+    color: #0000cd; 
+}
 
 .fa-twitter-square:hover +.iconbox{
     display: flex;
@@ -616,6 +625,14 @@ nav ul li{
 
 .contact{
     margin: 0 100px;
+}
+
+.fa-envelope-square:active +.iconbox{
+    display: flex;
+}
+
+.fa-envelope-square:active{
+    color: #0000cd; 
 }
 
 .fa-twitter-square:active +.iconbox{
@@ -832,6 +849,14 @@ nav ul li a{
 
 .contact-icon{
     margin-left: 40px;
+}
+
+.fa-envelope-square:active +.iconbox{
+    display: flex;
+}
+
+.fa-envelope-square:active{
+    color: #0000cd; 
 }
 
 .fa-twitter-square:active +.iconbox{
